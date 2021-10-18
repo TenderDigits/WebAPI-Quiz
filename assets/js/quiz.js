@@ -65,8 +65,12 @@ var quizQuestions = [
 var buttonEl = document.querySelector("#start-quiz");
 console.log(buttonEl);
 
+console.log(quizQuestions.length);
 
-// // clear the rules page and present the first question from the array (multiple choice)
+// for loop to access array of questions
+for(var i = 0; i < quizQuestions.length; i++) {
+    console.log(quizQuestions[i]);
+}
 
 // start 15 second timer for each question
 
@@ -93,5 +97,5 @@ var incorrect = function () {
 
 // start button eventListener - create function!
 buttonEl.addEventListener("click", function() {
-    alert("button clicked");
+    document.createElement(quizQuestions);
   });

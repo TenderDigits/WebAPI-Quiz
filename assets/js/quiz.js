@@ -2,10 +2,15 @@ var taskIdCounter = 0;
 
 // create student var to collect points logged
 var studentName = window.prompt("What is your name?");
-var studentTime = 15000;
 var studentPoints = 0;
 
-console.log(studentName, studentTime, studentPoints);
+console.log(studentName, studentPoints);
+
+var question = document.getElementById("question");
+var answer1 = document.getElementById("answer1");
+var answer2 = document.getElementById("answer2");
+var answer3 = document.getElementById("answer3");
+var answer4 = document.getElementById("answer4");
 
 // create arrays for questions with 4 multiple choice answers
 var quizQuestions = [
@@ -97,5 +102,5 @@ var incorrect = function () {
 
 // start button eventListener - create function!
 buttonEl.addEventListener("click", function() {
-    document.createElement(quizQuestions);
+    document.createElement("");
   });

@@ -67,7 +67,7 @@ var quizQuestions = [
 
 
 // start quiz button
-var buttonEl = document.querySelector("#start-quiz");
+var buttonEl = document.getElementById("start-quiz");
 console.log(buttonEl);
 
 console.log(quizQuestions.length);
@@ -102,5 +102,9 @@ var incorrect = function () {
 
 // start button eventListener - create function!
 buttonEl.addEventListener("click", function() {
-    document.createElement("");
+    question.textContent = quizQuestions[0].title
+    answer1.textContent = quizQuestions[0].choices[0]
+    answer2.textContent = quizQuestions[0].choices[1]
+    answer3.textContent = quizQuestions[0].choices[2]
+    answer4.textContent = quizQuestions[0].choices[3]
   });

@@ -80,7 +80,7 @@ for(var i = 0; i < quizQuestions.length; i++) {
 // start 15 second timer for each question
 
 
-// give student 2 points for each correct answer logged
+// give student 2 points for each correct answer logge
 var correct = function() {
     window.alert("Correct! 😃 🙌");
     studentPoints = studentPoints + 2;

@@ -67,15 +67,73 @@ var quizQuestions = [
 
 
 // start quiz button
-var buttonEl = document.getElementById("start-quiz");
-console.log(buttonEl);
+//var buttonEl = document.getElementById("start-quiz");
+//console.log(buttonEl);
 
-console.log(quizQuestions.length);
+//console.log(quizQuestions.length);
 
-// for loop to access array of questions
-for(var i = 0; i < quizQuestions.length; i++) {
-    console.log(quizQuestions[i]);
-}
+// declares an iterator variable // for i = 0
+//checks a condition // i < array.length
+//if the condition is true, it runs a code block
+
+let buttonEl = document.querySelector('start-quiz');
+let currentQuestion = 0
+let Question = [
+    {
+        title:"A memory location that holds a single letter or number?",
+        choices:["Char", "Double", "Int", "Word"],
+        answer: "Char"
+    },
+    {
+        title:"Which data structure uses LIFO?",
+        choices:["Array", "Int", "Stacks", "Queues"],
+        answer: "Stacks"
+    },
+    {
+        title:"Entering Comment is a useless task, it will not help in any way.",
+        choices:["True", "False"],
+        answer: "False"
+    },
+    {
+        title:"Int holds decemal numbers.",
+        choices:["True", "False"],
+        answer: "False"
+    },
+    {
+        title:"One loop inside the body of another loop is called?",
+        choices:["Loop in loop", "Double loops", "Nested loops", "Stacked loops"],
+        answer: "Nested loops"
+    },
+    {
+        title:"What is a short section of code that is written to complete a task?",
+        choices:["Buffer", "Function", "Array", "DOM"],
+        answer: "Function"
+    },
+    {
+        title:"What is a syntax error?",
+        choices:["An error you will never find", "an error you find at the end witht the program gives out a wrong value due to logic error", "An error due to user error", "An error caused by language rules being broken"],
+        answer: "An error caused by language rules being broken"
+    },
+    {
+        title:"What if FIFO?",
+        choices:["First in Few out", "Few in Few out", "First in First out", "Few in First out"],
+        answer: "First in Frist out"
+    },
+    {
+        title:"A do loop and a while loop are the same",
+        choices:["True", "False"],
+        answer: "False"
+    },
+    {
+        title:"What is an HTML attribute?",
+        choices:["Provides addtional iformation about an element", "A true or false variable", "A control flow statement", "None of the above"],
+        answer: "First in Frist out"
+    }]
+
+    button.addEventListener('click', function(){
+        console.log(`currentQuestion ${question[currentQues].title}`);
+        currentQuestion++
+    })
 
 // start 15 second timer for each question
 
